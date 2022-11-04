@@ -1,7 +1,7 @@
 <p align="center">
 	<img src="https://github.com/LcfherShell/PieShark/raw/main/pieshark.png" width=200px height=200px>
 </p>
-PieShark is a small framework for creating secure APIs and is recommended using python 3.4^.
+<h2>PieShark</h2> is a small framework for creating secure APIs and is recommended using python 3.4^.
 
 What you get from this framework:
 
@@ -17,7 +17,7 @@ What you get from this framework:
 ```console
 $ pip install pieshark
 ```
-##Simple Code:
+## Simple Code:
 ```Python hl_lines="4  9-12  25-27"
 
 from PieShark import pieshark, read_file, SESSION, Cookie, Templates, system, parser_url, nodejs, error_repport, cdn
