@@ -45,19 +45,12 @@ def home(request, response):
 	<body>
 		Hello from the HOME {{ hello }}
 	"""
-	"""
-		<script>
-		{ obfusc_js }
-		alert('sss');
-		{ endobfusc_js }
-		</script>
-	"""
 
 	cookie.crt(max_age=True, expires=True)
 	cookie(response)
 	response.headers['X-Frame-Options'] = 'SAMEORIGIN'
 	response.headers['Content-Type'] = 'text/html'
-	response.body = Templates(templates, hello="papa")#, jquery=deJS.script)
+	response.body = Templates(templates, hello="papa")
 
 
 @app.route("/hello/{name}")
